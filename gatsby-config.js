@@ -2,13 +2,7 @@ require("dotenv").config({
   path: `.env`,
 });
 
-process.env.PRIVATE_KEY.replace(/\\n/gm, "\n");
-
-let privateKey = process.env.PRIVATE_KEY;
-
-privateKey.replace(/\\n/gm, "\n");
-
-console.log(privateKey);
+process.env.PRIVATE_KEY;
 
 module.exports = {
   siteMetadata: {
@@ -25,7 +19,7 @@ module.exports = {
         typePrefix: "GoogleSpreadsheet",
         credentials: {
           client_email: process.env.CLIENT_EMAIL,
-          private_key: privateKey,
+          private_key: process.env.PRIVATE_KEY,
         },
       },
     },
