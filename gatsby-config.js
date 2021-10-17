@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`IM Fell English SC`],
+        fonts: [`IM Fell English SC`, `VT323`, `Press Start 2P`],
         display: "swap",
       },
     },

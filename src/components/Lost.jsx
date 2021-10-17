@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Reset } from "styled-reset";
 import { StaticImage } from "gatsby-plugin-image";
@@ -68,12 +68,13 @@ export default function Lost() {
   return (
     <>
       <Reset />
+      <title>Décevant</title>
       <BackgroundWrapper>
         <StaticImage src="../images/peclo.jpeg" />
       </BackgroundWrapper>
       <Title>Dommage.</Title>
       <SmokeWrapper>
-        <img src={smokeGif} />
+        <img src={smokeGif} alt="" />
       </SmokeWrapper>
     </>
   );
