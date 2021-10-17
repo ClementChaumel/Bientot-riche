@@ -21,5 +21,15 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`IM Fell English SC`],
+        display: "swap",
+      },
+    },
   ],
 };

@@ -18,12 +18,18 @@
     "babel-plugin-styled-components": "^1.13.2",
     "dotenv": "^10.0.0",
     "gatsby": "^3.13.1",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^1.14.1",
+    "gatsby-plugin-sharp": "^3.14.1",
     "gatsby-plugin-styled-components": "^4.14.0",
+    "gatsby-source-filesystem": "^3.14.0",
     "gatsby-source-google-spreadsheet": "^2.0.0",
+    "gatsby-transformer-sharp": "^3.14.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-papaparse": "^3.17.2",
     "stream": "^0.0.2",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "styled-reset": "^4.3.4"
   }
 }
