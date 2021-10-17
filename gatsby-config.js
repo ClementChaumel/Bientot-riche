@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env`,
 });
 
+process.env.PRIVATE_KEY.replace(/\\n/gm, "\n");
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
