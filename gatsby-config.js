@@ -17,7 +17,9 @@ module.exports = {
         typePrefix: "GoogleSpreadsheet",
         credentials: {
           client_email: process.env.CLIENT_EMAIL,
-          private_key: process.env.PRIVATE_KEY,
+          private_key: Buffer.from(process.env.PRIVATE_KEY, "base64").toString(
+            "utf8"
+          ),
         },
       },
     },
