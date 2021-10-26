@@ -28,7 +28,7 @@ const DollarBillWrapper = styled.div`
   opacity: 0;
 
   left: ${(props) => props.offset}%;
-  z-index: ${(props) => (props.depth < 3 ? 100 : 15)};
+  z-index: ${(props) => (props.size > 250 ? 100 : 15)};
   animation: ${falling} ${(props) => props.speed}s linear infinite;
   animation-delay: ${(props) => props.delay}s;
   transform: rotate(${(props) => props.rotation}deg);
@@ -49,7 +49,6 @@ export default function DollarBills() {
         rotation: Math.floor(Math.random() * (360 - 0 + 1)) + 0,
         delay: Math.floor(Math.random() * (10 - 5 + 1)) + 5,
         offset: Math.floor(Math.random() * (100 - 0 + 1)) - 10,
-        depth: Math.floor(Math.random() * (10 - 0 + 1)) + 0,
       });
     }
     setDollarBillArray(_dollarBillArray);
@@ -64,7 +63,6 @@ export default function DollarBills() {
           rotation={bill.rotation}
           delay={bill.delay}
           offset={bill.offset}
-          depth={bill.depth}
         >
           <img src={dollarBill} alt="" />
         </DollarBillWrapper>
