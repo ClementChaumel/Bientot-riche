@@ -241,12 +241,24 @@ export default function Counter({ participantsCount, prize }) {
               <TextSection>
                 <Text language="korean">* 방 귀 *</Text>
                 <Text>Nombre de joueurs</Text>
-                <Value>{participantsCount}</Value>
+                <Value>
+                  {new Intl.NumberFormat("fr-FR", {
+                    maximumFractionDigits: 0,
+                    minimumFractionDigits: 0,
+                  }).format(parseInt(participantsCount))}
+                </Value>
               </TextSection>
               <TextSection>
                 <Text language="korean">* 오 줌 &nbsp;똥 *</Text>
                 <Text>Cagnotte</Text>
-                <Value>{prize}</Value>
+                <Value>
+                  {new Intl.NumberFormat("fr-FR", {
+                    style: "currency",
+                    currency: "EUR",
+                    maximumFractionDigits: 0,
+                    minimumFractionDigits: 0,
+                  }).format(parseInt(prize))}
+                </Value>
               </TextSection>
             </TextWrapper>
           </CRT>
